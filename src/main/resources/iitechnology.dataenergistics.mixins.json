@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "com.ii.technology.compat.dataenergistics.mixin",
+  "plugin": "com.ii.technology.compat.dataenergistics.DEMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "DEConfigurableTntMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

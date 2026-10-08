@@ -1,0 +1,61 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.147'
+}
+
+version = mod_version
+group = mod_group_id
+base.archivesName = 'IITechnology'
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+
+neoForge {
+    version = project.neo_version
+    runs {
+        client { client() }
+        server { server(); programArgument '--nogui' }
+    }
+    mods {
+        "${mod_id}" { sourceSet(sourceSets.main) }
+    }
+}
+
+repositories {
+    mavenCentral()
+    flatDir { dirs 'libs' }
+}
+
+dependencies {
+    // AE2 is the one hard external dependency: the infinite ii cell is an AE2 storage cell.
+    compileOnly "local:appliedenergistics2:${ae2_version}"
+    // Optional interop: Mekanism chemical (silica) + metallurgic_infusing recipe.
+    compileOnly "local:mekanism:${mekanism_version}"
+    // Optional interop: Data_Energistics' TNT drops a 2i on sand.
+    compileOnly "local:data_energistics:${data_energistics_version}"
+}
+
+tasks.register('generateModMetadata', ProcessResources) {
+    filteringCharset = 'UTF-8'
+    inputs.properties([mod_version: mod_version, mod_id: mod_id, mod_name: mod_name,
+                       mod_license: mod_license, neo_version: neo_version])
+    expand([mod_version: mod_version, mod_id: mod_id, mod_name: mod_name,
+            mod_license: mod_license, neo_version: neo_version])
+    from 'src/main/templates'
+    into 'build/generated/sources/modMetadata'
+}
+sourceSets.main.resources.srcDir tasks.named('generateModMetadata')
+tasks.named('processResources', ProcessResources) {
+    filteringCharset = 'UTF-8'
+}
+neoForge.ideSyncTask tasks.named('generateModMetadata')
+
+tasks.named('processResources', ProcessResources) {
+    from('LICENSE') {
+        into 'META-INF/iitechnology'
+        rename { 'LICENSE-IITECHNOLOGY' }
+    }
+}
+
+jar {
+    manifest.attributes(['Implementation-Title': 'IITechnology', 'Implementation-Version': mod_version])
+}

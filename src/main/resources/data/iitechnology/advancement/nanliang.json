@@ -1,0 +1,15 @@
+{
+  "parent": "iitechnology:2i_root",
+  "display": {
+    "icon": { "id": "iitechnology:2i_4", "count": 1 },
+    "title": { "translate": "advancements.iitechnology.nanliang.title" },
+    "description": { "translate": "advancements.iitechnology.nanliang.description" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } },
+  "requirements": [ [ "code" ] ],
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,16 @@
+{
+  "itemGroup.iitechnology": "II Technology",
+  "chemical.iitechnology.silica": "二氧化硅",
+  "item.iitechnology.2i": "2i",
+  "item.iitechnology.2i_2": "2i",
+  "item.iitechnology.2i_3": "2i",
+  "item.iitechnology.2i_4": "2i",
+  "item.iitechnology.infinite_2i_cell": "无限ii元件",
+  "block.iitechnology.2icpu": "2i CPU",
+  "advancements.iitechnology.2i_root.title": "II Technology",
+  "advancements.iitechnology.2i_root.description": "II Technology · 从这里开始",
+  "advancements.iitechnology.nanliang.title": "！？南梁？！",
+  "advancements.iitechnology.nanliang.description": "你从沙子里面获得了一个南梁",
+  "iitechnology.configuration.title": "II Technology",
+  "iitechnology.configuration.section.server": "服务端设置"
+}

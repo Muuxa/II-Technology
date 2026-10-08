@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [ "SSS", "SCS", "SSS" ],
+  "key": {
+    "S": { "item": "minecraft:sand" },
+    "C": { "item": "iitechnology:2i_4" }
+  },
+  "result": { "count": 1, "id": "iitechnology:infinite_2i_cell" }
+}

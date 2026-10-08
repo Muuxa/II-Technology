@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "com.ii.technology.compat.ae2tnt.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AE2TinyTntMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

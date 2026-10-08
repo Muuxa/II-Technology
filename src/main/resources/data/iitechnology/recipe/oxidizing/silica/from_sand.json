@@ -1,0 +1,8 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "mekanism" }
+  ],
+  "type": "mekanism:oxidizing",
+  "input": { "count": 1, "item": "minecraft:sand" },
+  "output": { "amount": 5, "id": "iitechnology:silica" }
+}

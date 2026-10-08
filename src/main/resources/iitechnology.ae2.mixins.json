@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "com.ii.technology.mixin.ae2",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CraftingCPUClusterAccessor",
+    "CraftingCPUClusterMixin",
+    "CraftingCPUClusterSubmitMixin",
+    "CraftingServiceAccessor",
+    "CraftingServiceSplitMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

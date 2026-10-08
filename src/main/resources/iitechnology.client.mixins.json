@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "com.ii.technology.client.mixin",
+  "plugin": "com.ii.technology.client.mixin.IIClientMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "MEStorageScreenInfinityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "formed=false,powered=false": { "model": "iitechnology:block/2icpu" },
+    "formed=false,powered=true": { "model": "iitechnology:block/2icpu" },
+    "formed=true,powered=false": { "model": "iitechnology:block/2icpu" },
+    "formed=true,powered=true": { "model": "iitechnology:block/2icpu" }
+  }
+}

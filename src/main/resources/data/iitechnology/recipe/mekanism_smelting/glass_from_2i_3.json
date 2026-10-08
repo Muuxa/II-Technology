@@ -1,0 +1,8 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "mekanism" }
+  ],
+  "type": "mekanism:smelting",
+  "input": { "count": 1, "item": "iitechnology:2i_3" },
+  "output": { "count": 64, "id": "minecraft:glass" }
+}

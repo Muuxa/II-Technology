@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "com.ii.technology.client.mixin.aurelium",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ClientInfiniteKeysMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

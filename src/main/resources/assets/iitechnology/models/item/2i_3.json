@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": { "layer0": "iitechnology:item/2i_3", "layer1": "iitechnology:item/2i_3_overlay" }
+}

@@ -1,0 +1,16 @@
+{
+  "itemGroup.iitechnology": "II Technology",
+  "chemical.iitechnology.silica": "Silicon Dioxide",
+  "item.iitechnology.2i": "2i",
+  "item.iitechnology.2i_2": "2i",
+  "item.iitechnology.2i_3": "2i",
+  "item.iitechnology.2i_4": "2i",
+  "item.iitechnology.infinite_2i_cell": "Infinite ii Cell",
+  "block.iitechnology.2icpu": "2i CPU",
+  "advancements.iitechnology.2i_root.title": "II Technology",
+  "advancements.iitechnology.2i_root.description": "II Technology · where it begins",
+  "advancements.iitechnology.nanliang.title": "!? Nanliang?!",
+  "advancements.iitechnology.nanliang.description": "You got a Nanliang from the sand",
+  "iitechnology.configuration.title": "II Technology",
+  "iitechnology.configuration.section.server": "Server Settings"
+}

@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": { "id": "iitechnology:2i_4", "count": 1 },
+    "title": { "translate": "advancements.iitechnology.2i_root.title" },
+    "description": { "translate": "advancements.iitechnology.2i_root.description" },
+    "frame": "task",
+    "background": "minecraft:textures/block/pink_concrete.png",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_2i": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "iitechnology:2i" ] } ] }
+    }
+  },
+  "requirements": [ [ "has_2i" ] ],
+  "sends_telemetry_event": false
+}

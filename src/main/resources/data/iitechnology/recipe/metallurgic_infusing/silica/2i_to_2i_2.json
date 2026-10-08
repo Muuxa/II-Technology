@@ -1,0 +1,10 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "mekanism" }
+  ],
+  "type": "mekanism:metallurgic_infusing",
+  "item_input": { "count": 1, "item": "iitechnology:2i" },
+  "chemical_input": { "amount": 250, "chemical": "iitechnology:silica" },
+  "output": { "count": 1, "id": "iitechnology:2i_2" },
+  "per_tick_usage": false
+}

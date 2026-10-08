@@ -1,0 +1,54 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="${mod_license}"
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="II Technology"
+authors="muuxa"
+description='''A 2i-themed Applied Energistics 2 addon for Minecraft 1.21.1 / NeoForge: the 2i material chain,
+optional silica chemistry, a configurable 2i crafting CPU, and a self-contained infinite ii storage cell.'''
+[[dependencies.iitechnology]]
+modId="neoforge"
+type="required"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.iitechnology]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+[[dependencies.iitechnology]]
+# AE2 is required: the infinite ii cell is an AE2 storage cell.
+modId="ae2"
+type="required"
+versionRange="[19.2.17,)"
+ordering="AFTER"
+side="BOTH"
+[[mixins]]
+config="iitechnology.ae2tnt.mixins.json"
+[[mixins]]
+config="iitechnology.client.mixins.json"
+[[dependencies.iitechnology]]
+modId="mekanism"
+type="optional"
+versionRange="[10.7,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.iitechnology]]
+modId="data_energistics"
+type="optional"
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
+[[mixins]]
+config="iitechnology.dataenergistics.mixins.json"
+requiredMods=["data_energistics"]
+[[mixins]]
+config="iitechnology.aurelium.mixins.json"
+requiredMods=["aurelium"]
+[[mixins]]
+config="iitechnology.ae2.mixins.json"
+requiredMods=["ae2"]
