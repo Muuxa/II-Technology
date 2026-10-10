@@ -2,6 +2,7 @@ package com.ii.technology.cpu;
 
 import appeng.api.networking.events.GridCraftingCpuChange;
 import appeng.api.orientation.BlockOrientation;
+import appeng.api.util.AECableType;
 import appeng.blockentity.crafting.CraftingBlockEntity;
 import com.ii.technology.cpu.IITechnologyCpuPayloads.OpenCpuEditorPayload;
 import com.ii.technology.registry.IITechnologyBlocks;
@@ -47,11 +48,17 @@ public final class TwoICpuBlockEntity extends CraftingBlockEntity {
             setName("2i CPU");
         }
         super.onReady();
+        getMainNode().setExposedOnSides(EnumSet.allOf(Direction.class));
     }
 
     @Override
     public Set<Direction> getGridConnectableSides(BlockOrientation orientation) {
         return EnumSet.allOf(Direction.class);
+    }
+
+    @Override
+    public AECableType getCableConnectionType(Direction side) {
+        return AECableType.SMART;
     }
 
     @Override
